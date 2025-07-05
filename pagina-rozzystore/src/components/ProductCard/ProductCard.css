@@ -1,0 +1,37 @@
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+   max-width: 150px;
+  margin: 0;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+
+.product-card p {
+  color: #922b5d;
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 16px;
+
+}
+
+.product-image{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+
+  display: block;
+  margin: auto;
+}
+
+.product-name {
+   margin-top: 10px;
+  font-size: 16px;
+  color: #444;}

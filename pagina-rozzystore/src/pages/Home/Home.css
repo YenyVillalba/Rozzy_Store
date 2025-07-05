@@ -1,0 +1,107 @@
+.home-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.fondo-general {
+  background-color: #f4d7dd; /* Usa el color del navbar o el que desees */
+  min-height: 50vh;
+  
+}
+
+.contenedor-principal {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  /* o transparente si no quieres fondo dentro */
+ 
+}
+
+
+.home-title {
+  text-align: center;
+  color: #c40303;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.home-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.titulo-seccion {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.category-grid {
+display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 50px;; /* espacio horizontal y vertical entre tarjetas */
+  justify-content: center;
+  max-width: 1000px; /* Límite de ancho para que no se estiren demasiado */
+  margin: 0 auto;
+  padding: 0 20px; /* Espacio lateral en pantallas pequeñas */
+  box-sizing: border-box;
+}
+
+.product-grid {
+display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 24px;
+  
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+place-items: center; 
+
+}
+.banner-bienvenida {
+  text-align: center;
+ 
+  margin-bottom: 10px;
+  
+}
+
+.banner-bienvenida h2 {
+  color: #7f4c63;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.banner-bienvenida p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.banner-bienvenida h1 {
+  color: #7f4c63;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.titulo-seccion {
+  font-size: 1.8rem;
+  color: #7f4c63; /* rosado oscuro, como tu estilo */
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0 20px;
+  position: relative;
+}
+
+
+
+.seccion-productos {
+  margin-top: 40px;
+  margin-bottom: 60px; 
+}

@@ -1,0 +1,15 @@
+/* src/components/Carrousel/Carrousel.css */
+
+.carrusel-container {
+  width: 100%;
+  max-width: 700px;
+ /* Aumentamos para que se vea mejor */
+  overflow: hidden;
+   margin: 0 auto;
+}
+
+.carrusel-container img {
+ height: 100%;
+  width: 100%;
+  object-fit: cover;}
+
