@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f4d7dd;
+background: transparent;
   padding: 10px 20px;
   flex-wrap: wrap;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+ 
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -22,13 +22,14 @@ border-radius: 50%;}
 
 .navbar-title {
   font-size: 2.5rem;
-  color: #7f4c63;
+  color: #997283;
   font-weight: bold;
 }
 
 .navbar-links {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .navbar-links a {
@@ -37,10 +38,11 @@ border-radius: 50%;}
   font-weight: 500;
   transition: color 0.3s ease;
   font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .navbar-links a:hover {
-  color: #a45c85;
+  color: #997283;
 }
 
 .navbar-search {
@@ -50,30 +52,28 @@ border-radius: 50%;}
   border-radius: 20px;
   border: 1px solid #ccc;
   overflow: hidden;
-  margin: 10px 0;margin: 10px 0;
-}
+  margin: 10px 0;}
 
 .navbar-search input {
   padding: 5px 10px;
   border: none;
-
   outline: none;
-   font-size: 16px;
+   font-size: 1rem;
   width: 150px;
 }
 
 .navbar-search button {
-  background-color: #b88aa6;
+  background-color: #7f4c63;
   color: #fff;
   padding: 5px 10px;
   border: none;
   cursor:pointer;
-   font-size: 20px;
+   font-size: 1.2rem;
   transition: background-color 0.3s ease;
 }
 
 .navbar-search button:hover {
-  background-color: #a45c85;
+  background-color: #997283;
 }
 .navbar-icons {
   display: flex;
@@ -83,24 +83,59 @@ border-radius: 50%;}
 
 .navbar-icons a {
   color: #7f4c63;
+   transition: color 0.3s ease;
 }
 
 .navbar-icons a:hover {
-  color: #a45c85;
+  color: #997283;
 }
 
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .navbar-left {
+    justify-content: center;
+  }
+
+  .navbar-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
   }
 
   .navbar-search {
     width: 100%;
+    max-width: 300px;
   }
 
   .navbar-search input {
     width: 100%;
+  }
+
+  .navbar-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .navbar-links a {
+    font-size: 1rem;
+  }
+
+  .navbar-search button {
+    font-size: 1rem;
+  }
+
+  .navbar-icons {
+    font-size: 1.2rem;
   }
 }

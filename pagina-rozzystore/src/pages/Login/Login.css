@@ -2,9 +2,13 @@
 
 .login-container {
   background-image: url('../../assets/images/fondologin.jpg');
-  background-size: cover;
+  background-size: cover;           /* Muy importante */
   background-position: center;
-  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100vw;                     /* Ancho total de la pantalla */
+  height: 100vh;                    /* Alto total de la pantalla */
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +20,7 @@
   padding: 20px 25px;
   text-align: center;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 350px;
   width: 100%;
   position: relative;
   font-size: 0.8rem;
@@ -36,11 +40,13 @@
 .login-input {
   position: relative;
   margin-bottom: 15px;
+    width: 100%;
+
 }
 
 .login-input input {
-  width: 80%;
-  padding: 10px 40px 10px 35px;
+  width:100%;
+  padding: 10px 40px 10px 45px;
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 8px;
   font-size: 16px;
@@ -56,6 +62,7 @@
 
 .login-input .icon {
   position: absolute;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 18px;
@@ -79,7 +86,7 @@
 
 /* Botón de inicio de sesión */
 .login-button {
-  background-color: #b88aa6;
+  background-color: #ac7e92;
   color: white;
   border: none;
   border-radius: 10px;
@@ -92,7 +99,7 @@
 }
 
 .login-button:hover {
-  background-color: #a45c85;
+  background-color: #ac7e92;
   transform: scale(1.03);
 }
 
@@ -120,12 +127,12 @@
 }
 
 .social-btn:hover {
-  background-color: #e0e0e0;
+  background-color: #fff;
 }
 
 .google {
-  border-color: #7f4c63;
-  color: #7f4c63;
+  border-color: #ac7e92;
+  color: #ac7e92;
 }
 
 .facebook {
@@ -151,33 +158,27 @@
 
 
 @media (max-width: 480px) {
-  .login-box,
-  .register-box {
+  .login-box {
     width: 90%;
     padding: 25px 20px;
   }
 
-  .login-logo,
-  .register-logo {
+  .login-logo {
     width: 80px;
     margin-bottom: 10px;
   }
 
-  .login-box h2,
-  .register-box h2 {
+  .login-box h2 {
     font-size: 20px;
     margin-bottom: 15px;
   }
 
-  .login-input input,
-  .register-input input {
-    width: 100%;
+  .login-input input {
     padding: 10px 35px;
     font-size: 15px;
   }
 
-  .login-input .icon,
-  .register-input .icon {
+  .login-input .icon {
     font-size: 16px;
     left: 8px;
   }
@@ -187,8 +188,7 @@
     right: 8px;
   }
 
-  .login-button,
-  .register-button {
+  .login-button {
     font-size: 14px;
     padding: 10px 16px;
   }
@@ -204,8 +204,7 @@
     gap: 8px;
   }
 
-  .register-link,
-  .login-link {
+  .register-link {
     font-size: 13px;
     margin-top: 10px;
   }

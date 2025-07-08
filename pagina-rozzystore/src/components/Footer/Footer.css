@@ -1,5 +1,5 @@
 .footer {
-  background-color: #f1e5e5; /* Fondo rosado claro como el resto */
+  background: transparent;/* Fondo rosado claro como el resto */
   padding: 40px 20px 20px;
    font-family: inherit;
   color: #5d2e46; /* Rosado oscuro */
@@ -13,32 +13,39 @@
   max-width: 1200px;
   margin: 20px auto;
   gap: 40px;
+    padding: 0 10px;
+
 }
 
 .footer-section {
   flex: 1 1 250px;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
+}
+
+
+.footer-title,
+.footer-subtitle {
+  color: #7f4c63;
+  margin-bottom: 10px;
 }
 
 .footer-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  color: #7f4c63;
-  margin-bottom: 10px;
+  
 }
 
 .footer-subtitle {
-    font-size: 16px;
+    font-size: 1rem;
   font-weight: bold;
   margin-top: 20px;
-  margin-bottom: 10px;
-  color: #7f4c63;
+  
 }
 
 .footer-section p,
 .footer-section li {
-  font-size: 15px;
+  font-size: 0.95rem;
   color: #444;
   margin: 5px 0;
   list-style: none;
@@ -46,6 +53,7 @@
 
 .footer-section ul {
   padding: 0;
+   margin: 0;
 }
 
 .footer-icons {
@@ -53,7 +61,7 @@
 }
 
 .icon {
-  font-size: 22px;
+  font-size: 1.4rem;
   margin: 0 8px;
   color: #7f4c63;
   cursor: pointer;
@@ -62,7 +70,7 @@
 
 .icon:hover {
   transform: scale(1.1);
-  color: #a05278; /* Un poco más suave al pasar el mouse */
+  color: #997283; /* Un poco más suave al pasar el mouse */
 }
 
 .footer-divider {
@@ -75,7 +83,7 @@
 
 .footer-bottom {
   text-align: center;
-  font-size: 13px;
+  font-size: 0.8rem;
   color: #555;
   margin-top: 10px;
 }
@@ -97,5 +105,47 @@
 .footer-links {
   color: #7f4c63;
   text-decoration: underline;
-  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer-title {
+    font-size: 1.5rem;
+  }
+
+  .footer-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+    font-size: 1.2rem;
+    margin: 0 6px;
+  }
+
+  .footer-bottom {
+    font-size: 0.7rem;
+  }
+
+  .footer-links {
+    font-size: 0.7rem;
+  }
 }

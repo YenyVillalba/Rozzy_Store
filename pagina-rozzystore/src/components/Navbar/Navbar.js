@@ -24,9 +24,10 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-icons">
-        <Link to="/profile"><FaUser /></Link>
+      
         <Link to="/favorites"><FaHeart /></Link>
         <Link to="/cart"><FaShoppingCart /></Link>
+          <Link to="/profile"><FaUser /></Link>
       </div>
     </header>
   );

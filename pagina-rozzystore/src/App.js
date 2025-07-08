@@ -5,7 +5,7 @@ import Home from './pages/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import { useEffect, useState } from 'react';
-
+import './App.css';
 
 function AppWrapper() {
   const location = useLocation();
@@ -20,20 +20,19 @@ function AppWrapper() {
   
 
   return (
-    <>
+    <div className="app-container">
       {showNavbar && <Navbar />}
+
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
      
-
-
       </Routes>
 
        {showFooter && <Footer />}
-    </>
+    </div>
   );
 }
 
